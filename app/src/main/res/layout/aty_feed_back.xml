@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title"
+        style="@style/TopStatus">
+
+        <ImageView
+            android:id="@+id/iv_atyFeedBack_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/item_back" />
+
+        <TextView
+            style="@style/nav_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="问题反馈"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:paddingTop="10sp">
+
+        <EditText
+            android:id="@+id/et_atyFetch_note"
+            style="@style/default_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_darkblack_round"
+            android:gravity="left|top"
+            android:inputType="textMultiLine"
+            android:minLines="12"
+            android:hint="请输入宝贵的意见或建议"
+            android:paddingLeft="10sp"
+            android:paddingTop="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="欢迎您为我们提出宝贵的意见和建议，您留下的任何信息都将用来改善UD软件。"
+            style="@style/default_text"
+            android:textColor="@color/text_clo"
+            android:gravity="center"
+            android:layout_marginTop="40sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注：订单相关问题请拨打188-8888-8888获得及时的帮助，意见反馈无法处理订单相关问题。"
+            style="@style/default_text"
+            android:textStyle="bold"
+            android:textColor="@color/text_clo"
+            android:gravity="center"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_atyFeedBack_submit"
+        style="@style/default_text"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/item_btn"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white" />
+
+</LinearLayout>

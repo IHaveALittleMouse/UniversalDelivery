@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_login_bg"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/TopStatus">
+
+        <ImageView
+            android:id="@+id/back_to_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/item_back" />
+
+        <TextView
+            style="@style/nav_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="登录"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/usr_icon"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <!--<ImageView-->
+                <!--android:id="@+id/back_to_home"-->
+                <!--android:layout_width="30sp"-->
+                <!--android:layout_height="30sp"-->
+                <!--android:layout_marginLeft="10sp"-->
+                <!--android:src="@drawable/item_back_black" />-->
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/item_head" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usr_icon"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@stritem_phonehone"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+                <EditText
+                    android:id="@+id/etPhoneNum"
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="@string/phone"
+                    android:inputType="phone"
+                    android:padding="10sp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearlayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linearlayout1"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <EditText
+                        android:id="@+id/etCode"
+                        android:layout_width="210dp"
+                        android:layout_height="40sp"
+                        android:layout_marginBottom="20sp"
+                        android:layout_marginTop="20sp"
+                        android:background="@drawable/edit_text_border"
+                        android:hint="@string/code"
+                        android:inputType="number"
+                        android:padding="10sp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnGetCode"
+                        android:layout_width="80dp"
+                        android:layout_height="40sp"
+                        android:layout_marginBottom="20sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="20sp"
+                        android:layout_toRightOf="@id/etCode"
+                        android:background="@drawable/btn_code_border"
+                        android:text="@string/get_code"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearlayout2"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="10sp">
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20sp"
+                    android:background="@drawable/btn_check_border"
+                    android:text="@string/login"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+
+                    />
+
+                <!--<Button-->
+                <!--android:id="@+id/btnRegister"-->
+                <!--android:layout_width="300sp"-->
+                <!--android:layout_height="40sp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="注册"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:textSize="18sp"-->
+                <!--android:textColor="#fff"-->
+                <!--android:background="@drawabtn_check_borderrder"-->
+
+                <!--/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

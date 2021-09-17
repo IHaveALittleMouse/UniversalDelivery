@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/TopStatus">
+
+        <ImageView
+            android:id="@+id/iv_update_order_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/item_back" />
+
+        <TextView
+            style="@style/nav_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="修改订单"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <TextView
+            style="@style/default_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="请选择快递点：" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/update_point_spinner"
+                style="@style/spinner_bar"
+                android:background="@color/transparent" />
+
+            <ImageView
+                style="@style/spinner_btn"
+                android:layout_alignBottom="@+id/sp_mng_area"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="24dp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5sp"
+                android:layout_alignBottom="@+id/update_point_spinner"
+                android:background="@drawable/sp_line"></View>
+
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/default_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="请填写取货号：" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/tv_update_order_takenum"
+                style="@style/spinner_bar"
+                android:paddingLeft="7sp"
+                android:hint="如：5601"
+                android:inputType="number"
+                android:singleLine="true"
+                android:background="@color/transparent" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5sp"
+                android:layout_alignBottom="@+id/tv_update_order_takenum"
+                android:background="@drawable/sp_line"></View>
+
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/default_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="请选择您方便的收货地点：" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/update_loc_spinner"
+                style="@style/spinner_bar"
+                android:background="@color/transparent" />
+
+            <ImageView
+                style="@style/spinner_btn"
+                android:layout_alignBottom="@+id/sp_mng_area"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="24dp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5sp"
+                android:layout_alignBottom="@+id/update_loc_spinner"
+                android:background="@drawable/sp_line"></View>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            style="@style/default_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:text="备注：" />
+
+
+        <EditText
+            android:id="@+id/update_note"
+            style="@style/default_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_black_round"
+            android:gravity="left|top"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:paddingLeft="7sp"
+            android:paddingTop="4sp"
+            android:hint="若上述列表中没有您的快递点，请在备注中说明"/>
+
+
+        <Button
+            android:id="@+id/update_summit"
+            style="@style/default_text"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:background="@drawable/btn_send_bg"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

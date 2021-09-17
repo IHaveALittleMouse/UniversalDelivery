@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv_fragMe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170sp"
+            android:paddingTop="5sp"
+            android:background="@drawable/item_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:background="@color/transparent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="20sp">
+
+                <com.charlesgloria.ud.widget.ImageViewPlus
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="65sp"
+                    android:layout_height="65sp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10sp"
+                    android:src="@drawable/item_head" />
+
+                <LinearLayout
+                    android:id="@+id/ll_frag_me_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_frag_me_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未登录"
+                        android:textColor="@color/white_grey"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_fragMe_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1sp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="id : "
+                            android:textColor="@color/white_grey"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/tv_fragMe_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12345678910"
+                            android:textColor="@color/white_grey"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/wrap_layout">
+
+            <LinearLayout
+                android:id="@+id/address_mng"
+                style="@style/top_layout">
+
+                <TextView
+
+                    style="@style/usertext"
+                    android:text="地址管理" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout
+                android:id="@+id/tv_ic"
+                style="@style/mid_layout">
+
+                <TextView
+
+                    style="@style/usertext"
+                    android:text="修改头像" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout
+                android:id="@+id/tv_trust_orders"
+                style="@style/bottom_layout">
+
+                <TextView
+
+                    style="@style/usertext"
+                    android:text="信任订单" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/wrap_layout">
+
+            <LinearLayout
+                android:id="@+id/ll_fragMe_joinUs"
+                style="@style/single_layout">
+
+                <TextView
+
+                    style="@style/usertext"
+                    android:text="加入UDers" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout
+                android:id="@+id/team"
+                style="@style/single_layout">
+
+                <TextView
+
+                    style="@style/usertext"
+                    android:text="关于UD" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/wrap_layout"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/ll_fragMe_staffOnly"
+                style="@style/single_layout">
+
+                <TextView
+
+                    style="@style/usertext"
+                    android:text="员工通道" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/item_fragme_carrier"/>
+
+                <!--<ImageView style="@style/img_arrow" />-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/func_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/item_btn"
+            android:text="退出登录"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/result_tv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="result"-->
+        <!--android:layout_margin="20sp"/>-->
+
+    </LinearLayout>
+</ScrollView>

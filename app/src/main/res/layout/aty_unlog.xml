@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.charlesgloria.ud.atys.AtyUnlog">
+
+    <LinearLayout style="@style/TopStatus">
+
+        <ImageView
+            android:id="@+id/back_to_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/item_back" />
+
+        <TextView
+            style="@style/nav_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="未登录"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f9f9fa"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="130sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0sp"
+            android:text="抱歉，您尚未登陆"
+            android:textColor="@color/theme_blue"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请登录后使用相关功能"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="20sp"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="去登录"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20sp"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/to_login"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:gravity="center"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginLeft="5sp"
+                    android:src="@drawable/item_right_arrow" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:src="@drawable/item_unlog" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

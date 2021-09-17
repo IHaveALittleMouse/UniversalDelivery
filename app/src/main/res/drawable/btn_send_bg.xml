@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item_home_banneritem android:state_pressed="true"></item_home_banneritem>
+    <!--<shape android:shape="rectangle">-->
+    <!--<stroke android:width="1px" android:color="@color/color_light_grey" />-->
+    <!--<corners android:radius="3dp" />-->
+    <!--<solid android:color="@color/color_detach_line" />-->
+    <!--</shape>-->
+
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="1px" android:color="#0202ff" />
+            <corners android:radius="3dp" />
+            <solid android:color="#3636ff" />
+        </shape>
+    </item>
+</selector>

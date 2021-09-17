@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/aty_chat_main.xml" value="0.12395833333333334" />
+        <entry key="app/src/main/res/layout/aty_trust_orders.xml" value="0.2557291666666667" />
+        <entry key="app/src/main/res/layout/frag_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/frag_me.xml" value="0.24444444444444444" />
+        <entry key="app/src/main/res/layout/mod_record.xml" value="0.8938980102539062" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
