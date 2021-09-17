@@ -1,0 +1,95 @@
+<resources>
+    <!-- &#160; 是空格-->
+    <string name="app_name">UD</string>
+    <string name="welcome">Welcome!</string>
+    <string name="home">主页</string>
+    <string name="get">订单</string>
+    <string name="community">聊天</string>
+    <string name="me">我的</string>
+    <string name="search_qryHint">搜索订单</string>
+    <string name="search_qryContact">搜索用户</string>
+    <string name="want_to_get">取快递</string>
+    <string name="want_to_post">我要寄快递</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="code">验证码</string>
+    <string name="phone">手机号</string>
+    <string name="get_code">获取验证码</string>
+    <string name="login">登录</string>
+    <string name="publish_message">publish message</string>
+    <string name="phone_num_cannot_be_empty">手机号不能为空！</string>
+    <string name="username_cannot_be_empty">请输入用户名</string>
+    <string name="password_cannot_be_empty">请输入密码</string>
+    <string name="password_cannot_be_dismatch">两次输入的密码不一致</string>
+    <string name="code_cannot_be_empty">验证码不能为空！</string>
+    <string name="fail_to_get_code">获取验证码失败！</string>
+    <string name="fail_to_login">登录失败，请稍后再试</string>
+    <string name="fail_to_commit">提交失败，请稍后再试</string>
+    <string name="fail_to_load_timeline_data">Fail to load messages,please try later</string>
+    <string name="suc_to_get_code">验证码已发送，请及时查看信息</string>
+    <string name="suc_to_regist">注册成功</string>
+    <string name="login_already">您已登录</string>
+    <string name="login_notyet">您尚未登录</string>
+    <string name="fail_to_regist">用户名已存在</string>
+    <string name="connecting">连接中...</string>
+    <string name="connecting_to_server">正在连接服务器，请稍后...</string>
+    <string name="confirm_order">确认收货</string>
+    <string name="extend_order">延长收货</string>
+    <string name="complain">投诉</string>
+    <string name="locate_school">学校位置定位</string>
+    <string name="user_current_location">您当前的位置是：</string>
+    <string name="i_agree"><b><u>《UD用户服务协议》</u></b></string>
+    <string name="agreemt1">
+        \t\t欢迎使用UD平台及服务！\n
+\t\t为使用UD平台（一下统称“本平台”）及服务，您应当阅读并遵守《UD用户服务协议》（以下简称“本协议”）。请您认真阅读本协议，确保您充分理解本协议中各条款。请您审慎阅读并选择接受或不接受本协议。除非您接受本协议所有条款，否则您无权注册、登录或使用本协议所涉服务。您的注册、登录、使用等行为将视为对本协议的接受，并同意接受本协议各项条款的约束。
+    </string>
+    <string name="agreemt2">\t\t1、用户在使用本平台服务前需要注册一个UD账号。UD账号应当使用手机号码绑定注册，请用户使用尚未注册过的手机号，以及未被“本平台”根据本协议封禁的手机号码注册账号。本平台可以根据用户需求或平台需要对账号注册的方式进行变更。\n
+\t\t2、用户一旦注册成功，成为本平台的用户，将有权利使用自己的账号和验证码随时登录 本平台。用户对以其用户名进行的所有活动和事件负全责。\n
+\t\t3、如果用户泄露了密码，有可能导致不利的法律后果，因此不管任何原因导致用户的账号安全受到威胁，应该立即和本平台的客服人员取得联系，否则后果自负。</string>
+    <string name="agreemt3">\t\t1、用户承诺其为具有完全民事行为能力的民事主体，且具有达成交易履行其义务的能力。\n
+\t\t2、用户有义务在注注册或使用本平台服务提供自己的真实资料，并保证诸如手机号码、姓名、所在地区，等内容的有效性及安全性，保证本平台工作人员可以通过上述联系方式与用户取得联系。同时，用户也有义务在相关资料实际变更时及时更新有关注册资料。\n
+\t\t3、用户通过使用本平台的过程中所制作、上载、复制、发布、传播的任何内容，包括但不限于账号头像、名称、用户说明等注册信息及认证资料，或文字、语音、图片、视频、图文等发送、回复和相关链接页面，以及其他使用账号或本服务所产生的内容，不得违反国家相关法律制度，包含但不限于如下原则：\n
+\t\t（1）反对宪法所确定的基本原则的；\n
+\t\t（2）危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；\n
+\t\t（3）损害国家荣誉和利益的；\n
+\t\t（4）煽动民族仇恨、民族歧视，破坏民族团结的；\n
+\t\t（5）破坏国家宗教政策，宣扬邪教和封建迷信的；\n
+\t\t（6）散布谣言，扰乱社会秩序，破坏社会稳定的；\n
+\t\t（7）散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；\n
+\t\t（8）侮辱或者诽谤他人，侵害他人合法权益的；\n
+\t\t（9）含有法律、行政法规禁止的其他内容的。</string>
+    <string name="agreemt4">\t\t1、本平台具体服务内容由UD平台公司根据实际情况提供，包括但不限于：\n
+\t\t（1）在线咨询服务；\n
+\t\t（2）服务商收入结算和用户支付费用：具体金额以本平台产生的统计及计算数据为准；\n
+\t\t（3）对在本平台成功下单的用户进物件件配送。\n
+\t\t2、所有发给用户的通告及其他消息都可通过APP或者用户所提供的联系方式发送。</string>
+    <string name="agreemt5">\t\t1、在下列情况下，本平台有权终止向用户提供服务：\n
+\t\t（1）在用户违反本服务协议相关规定时，本平台有权终止向该用户提供服务。如该用户再一次直接或间接或以他人名义注册为用户的，一经发现，本平台有权直接单方面终止向该用户提供服务；\n
+\t\t（2）如本平台通过用户提供的信息与用户联系时，发现用户在注册时填写的联系方式已不存在或无法接通，本平台以其它联系方式通知用户更改，而用户在三个工作日内仍未能提供新的联系方式，本平台有权终止向该用户提供服务；\n
+\t\t（3）用户不得通过程序或人工方式进行刷量，若发现用户有多次（多次警告之后）填写虚假订单行为，本平台将立即终止服务，并有权扣留账户内金额；\n
+\t\t（4）本服务条款终止或更新时，用户明示不愿接受新的服务条款；\n
+\t\t（5）其它本平台认为需终止服务的情况。\n
+\t\t2、服务终止后，本平台没有义务为用户保留原账号中或与之相关的任何信息，或转发任何未曾阅读或发送的信息给用户或第三方。</string>
+    <string name="agreemt6">\t\t1、若本平台已经明示其服务提供方式发生变更并提醒用户应当注意事项，用户未按要求操作所产生的一切后果由用户自行承担。\n
+\t\t2、用户明确同意其使用本平台所存在的风险将完全由其自己承担，因其使用本平台而产生的一切后果也由其自己承担。\n
+\t\t3、用户同意保障和维护本平台及其他用户的利益，由于用户在使用本平台有违法、不真实、不正当、侵犯第三方合法权益的行为，或用户违反本协议项下的任何条款而给本平台及任何其他第三方造成损失，用户同意承担由此造成的损害赔偿责任。</string>
+    <string name="agreemt7">\t\t您使用本平台或服务即视为您已经阅读并同意接受本协议的约束。UD平台有权在必要时修改本协议的条款。您可以在本平台、服务的最新版本中查阅相关协议条款。本协议条款变更后，如果您继续使用本平台或服务，即视为您已接受修改后的协议。如果您不接受修改后的协议，应当停止使用本平台及服务。</string>
+
+    <string name="join_agreemt1">\t\t欢迎加入UD平台——UDers Team！\n
+\t\t为成为UD平台——UDers Team的一员（快件配送员工），您应当阅读并遵守《关于加入UDers协议》（以下简称“本协议”）。请您认真阅读本协议，确保您充分理解本协议中各条款。请您审慎阅读并选择接受或不接受本协议。除非您接受本协议所有条款，否则您无权注册成为一名UDer。您的注册行为将视为对本协议的接受，并同意接受本协议各项条款的约束。</string>
+    <string name="join_agreemt2">\t\t乙方需要填写个人相关信息，应保证个人所填信息的真实性与准确性。乙方在客户端注册完成后，还须到达所在校园的UD平台代理处柜台签写纸质协议。</string>
+    <string name="join_agreemt3">\t\t1、鉴于甲方发展需要，雇佣乙方为UD平台提供劳动服务，甲方有安排乙方劳动服务的权利。\n
+\t\t2、甲方每月给乙方发放额定工资与奖金。\n
+\t\t3、甲方须保护乙方个人信息，以及乙方工作时间内的个人工作安全。</string>
+    <string name="join_agreemt4">\t\t1、乙方须每天及时来指定地点参与工作，不得无故旷工，如有特殊情况必须提前请假，要经过甲方允许方可休息。\n
+\t\t2、乙方工作时间须认真完成甲方安排的劳动服务，每一件快件必须完好送达顾客手中，有特殊情情况必须及时向甲方反馈，送快件时不得向顾客索要额外金额。完成每批次快件必须将本批次的金额交予甲方。\n
+\t\t3、乙方须维护甲方的名誉，在送快件时须微笑服务并注意礼貌，不得与顾客争吵。如有特殊情况必须及时上报甲方负责人处理。\n
+\t\t4、乙方薪资面议，其包括基本月工资+月奖金。</string>
+    <string name="join_agreemt5">\t\t乙方同意保障和维护本平台及其他用户的利益，由于乙方在使用本平台有违法、不真实、不正当、侵犯第三方合法权益的行为，或乙方违反本协议项下的任何条款而给本平台及任何其他第三方造成损失，乙方同意承担由此造成的损害赔偿责任。</string>
+    <string name="check_agreement">请阅读用户协议并勾选我同意</string>
+    <string name="qq_header_reset">下拉刷新</string>
+    <string name="qq_header_pull">下拉刷新</string>
+    <string name="qq_header_pull_over">释放立即刷新</string>
+    <string name="qq_header_refreshing">正在刷新...</string>
+    <string name="qq_header_completed">刷新成功</string>
+</resources>

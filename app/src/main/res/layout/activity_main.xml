@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2sp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/txt_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="33sp"
+                android:layout_height="33sp"
+                android:layout_margin="2sp"
+                android:src="@drawable/tab_menu_home" />
+
+            <TextView
+                style="@style/min_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/home"
+                android:textColor="@drawable/tab_menu_deal_text"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/txt_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="27sp"
+                    android:layout_height="23sp"
+                    android:layout_margin="7sp"
+                    android:src="@drawable/tab_menu_order" />
+
+                <TextView
+                    style="@style/min_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/get"
+                    android:textColor="@drawable/tab_menu_deal_text" />
+            </LinearLayout>
+
+            <!--<TextView-->
+                <!--android:id="@+id/unread_msg_number"-->
+                <!--android:layout_width="20sp"-->
+                <!--android:layout_height="20sp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="12dp"-->
+                <!--android:layout_marginTop="1dp"-->
+                <!--android:background="@drawable/em_unread_count_bg"-->
+                <!--android:gravity="center"-->
+                <!--android:text="2"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="12sp"-->
+                <!--android:visibility="visible" />-->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/txt_community"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_margin="4sp"
+                    android:src="@drawable/tab_menu_community" />
+
+                <TextView
+                    style="@style/min_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/community"
+                    android:textColor="@drawable/tab_menu_deal_text" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/unread_msg_number"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/em_unread_count_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/txt_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="35sp"
+                android:layout_margin="1sp"
+                android:src="@drawable/tab_menu_me" />
+
+            <TextView
+                style="@style/min_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/me"
+                android:textColor="@drawable/tab_menu_deal_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/blank_bar"
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:layout_above="@id/tab_menu"
+        android:background="@android:color/transparent" />
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/blank_bar"
+        android:background="#BEBEBE" />
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        android:background="@android:color/transparent"></FrameLayout>
+
+</RelativeLayout>

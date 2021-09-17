@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_banner"
+    android:orientation="vertical"
+    android:paddingTop="20sp">
+
+    <!--<SearchView-->
+        <!--android:id="@+id/searchView"-->
+        <!--style="@style/default_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="37dp"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:background="@drawable/searchview_line"-->
+        <!--android:gravity="center"-->
+        <!--android:queryHint="@string/search_qryHint" />-->
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/order_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/transparent"
+            android:orientation="horizontal"
+            android:paddingTop="11sp"
+            android:paddingBottom="3sp">
+
+            <TextView
+                android:id="@+id/page_current"
+                style="@style/title_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="当前订单"
+                android:textColor="#FFFAFAFA"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:id="@+id/page_history"
+                style="@style/title_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="历史订单"
+                android:textColor="#FFFAFAFA"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_line_height"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_marginBottom="1sp"
+            android:background="@color/transparent"
+            >
+
+            <ImageView
+                android:id="@+id/cursor"
+                android:layout_width="@dimen/main_matrix_width"
+                android:layout_height="@dimen/main_line_height"
+                android:scaleType="matrix"
+                android:src="@color/white" />
+
+        </LinearLayout>
+
+        <!--<include layout="@layout/ease_search_bar" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.administrator.bottom.widget.MultiSwipeRefreshLayout
+                android:id="@+id/srl_fragOrder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_fragOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFAFAFA">
+
+                </android.support.v4.view.ViewPager>
+            </com.example.administrator.bottom.widget.MultiSwipeRefreshLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15sp"
+                android:paddingBottom="15sp">
+
+                <ImageView
+                    android:id="@+id/iv_fragOrder_backtotop"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:background="@drawable/item_top" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

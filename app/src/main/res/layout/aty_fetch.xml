@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/TopStatus">
+
+        <ImageView
+            android:id="@+id/iv_atyDetails_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/item_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="代拿下单"
+            android:textColor="@color/white"
+            style="@style/nav_text" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="请选择您方便的收货时间："
+            style="@style/default_text"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/sp_atyFetch_pickPoint"
+                style="@style/spinner_bar" />
+
+            <ImageView
+                android:layout_alignBottom="@+id/sp_atyFetch_pickPoint"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="24dp"
+                style="@style/spinner_btn" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="请选择您方便的收货地点："
+            style="@style/default_text" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/sp_atyFetch_arriveAddress"
+                style="@style/spinner_bar" />
+
+            <ImageView
+                android:layout_alignBottom="@+id/sp_atyFetch_arriveAddress"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="24dp"
+                style="@style/spinner_btn" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="备注："
+            style="@style/default_text" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="100sp"
+            android:inputType="textMultiLine"
+            android:gravity="left|top"
+            android:minLines="6"
+            android:background="@drawable/spinner_border"
+            android:padding="10sp"
+            style="@style/default_text"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:text="我同意UD平台代取业务用户协议"
+            style="@style/default_text"
+            />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_send_bg"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white"
+            style="@style/default_text" />
+    </LinearLayout>
+
+
+</LinearLayout>

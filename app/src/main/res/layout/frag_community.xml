@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_banner"
+    android:orientation="vertical"
+    android:paddingTop="20sp">
+
+    <SearchView
+        android:id="@+id/searchView"
+        style="@style/default_text"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/searchview_line"
+        android:gravity="center"
+        android:queryHint="@string/search_qryContact" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/transparent"
+                android:orientation="horizontal"
+                android:paddingTop="11sp">
+
+                <TextView
+                    android:id="@+id/tv_fragCommunity_chat"
+                    style="@style/title_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="聊天"
+                    android:textColor="#FFFAFAFA"/>
+
+                <TextView
+                    android:id="@+id/tv_fragCommunity_contact"
+                    style="@style/title_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="通讯录"
+                    android:textColor="#FFFAFAFA"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.example.administrator.bottom.widget.MultiSwipeRefreshLayout
+                    android:id="@+id/srl_fragCommunity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_fragCommunity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFAFAFA">
+
+                    </android.support.v4.view.ViewPager>
+                </com.example.administrator.bottom.widget.MultiSwipeRefreshLayout>
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginRight="15sp"-->
+                    <!--android:paddingBottom="15sp">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/iv_fragCommunity_backtotop"-->
+                        <!--android:layout_width="35sp"-->
+                        <!--android:layout_height="35sp"-->
+                        <!--android:background="@drawable/item_top" />-->
+                <!--</LinearLayout>-->
+            </RelativeLayout>
+
+
+        </LinearLayout>
+</LinearLayout>

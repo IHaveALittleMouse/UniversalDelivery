@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/TopStatus">
+
+        <ImageView
+            android:id="@+id/iv_atyMail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/item_back" />
+
+        <TextView
+            style="@style/nav_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="填写订单信息"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_grey"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    style="@style/default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:text="请选择快递体积（仅做参考）"
+                    android:textColor="@color/text_clo" />
+
+                <RadioGroup
+                    android:id="@+id/rg_atyMail_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0sp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rb_atyMail_size_small"
+                        style="@style/default_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="小（ ≤ 3kg ）"
+                        android:textColor="@color/text_clo" />
+
+                    <RadioButton
+                        android:id="@+id/rb_atyMail_size_medium"
+                        style="@style/default_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="中（ 3kg ~ 5kg ）"
+                        android:textColor="@color/text_clo" />
+
+                    <RadioButton
+                        android:id="@+id/rb_atyMail_size_large"
+                        style="@style/default_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="大（ ≥ 5kg ）"
+                        android:textColor="@color/text_clo" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_atyMail_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="10sp">
+
+                <TextView
+                    style="@style/default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:text="请填写快递数量（默认为1件）"
+                    android:layout_marginRight="10sp"
+                    android:textColor="@color/text_clo" />
+
+                <RelativeLayout
+                    android:layout_width="70sp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/tv_atyMail_amount"
+                        style="@style/spinner_bar"
+                        android:background="@color/transparent"
+                        android:inputType="number"
+                        android:paddingLeft="7sp"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:textColor="@color/text_clo"
+                        android:text="1" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_alignBottom="@+id/tv_atyMail_amount"
+                        android:background="@drawable/sp_line"></View>
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:text="件"
+                    android:gravity="right"
+                    android:layout_marginLeft="10sp"
+                    android:textColor="@color/text_clo" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="10sp">
+
+                <TextView
+                    style="@style/default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:text="请选择您方便的寄件地点"
+                    android:textColor="@color/text_clo" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/sp_atyMail_arriveAddress"
+                        style="@style/spinner_bar"
+                        android:background="@color/transparent" />
+
+                    <ImageView
+                        style="@style/spinner_btn"
+                        android:layout_alignBottom="@+id/sp_mng_area"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="24dp" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_alignBottom="@+id/sp_atyMail_arriveAddress"
+                        android:background="@drawable/sp_line"></View>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:text="请选择您方便的寄件时间"
+                    android:textColor="@color/text_clo" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/sp_atyMail_arriveTime"
+                        style="@style/spinner_bar"
+                        android:background="@color/transparent" />
+
+                    <ImageView
+                        style="@style/spinner_btn"
+                        android:layout_alignBottom="@+id/sp_mng_area"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="24dp" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_alignBottom="@+id/sp_atyMail_arriveTime"
+                        android:background="@drawable/sp_line"></View>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+
+                <TextView
+                    style="@style/default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:text="备注"
+                    android:textColor="@color/text_clo" />
+
+
+                <EditText
+                    android:id="@+id/et_atyMail_note"
+                    style="@style/default_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_black_round"
+                    android:gravity="left|top"
+                    android:hint="若您有其他特殊要求，请在备注中说明"
+                    android:inputType="textMultiLine"
+                    android:minLines="4"
+                    android:paddingLeft="7sp"
+                    android:paddingTop="4sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_atyMail_submit"
+                style="@style/default_text"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/item_btn"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

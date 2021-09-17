@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_grey">
+
+    <LinearLayout
+        style="@style/TopStatus">
+
+        <ImageView
+            android:id="@+id/Address_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/item_back"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            android:text="选择地址"
+            style="@style/nav_text"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_grey"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    style="@style/default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:text="请选择您所在的区域："
+                    android:textColor="@color/text_clo" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/sp_address_area"
+                        style="@style/spinner_bar"
+                        android:background="@color/transparent" />
+
+                    <ImageView
+                        style="@style/spinner_btn"
+                        android:layout_alignBottom="@+id/sp_mng_area"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="24dp" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_alignBottom="@+id/sp_address_area"
+                        android:background="@drawable/sp_line"></View>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:text="请选择您的楼号："
+                    android:textColor="@color/text_clo" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/sp_address_building"
+                        style="@style/spinner_bar"
+                        android:background="@color/transparent" />
+
+                    <ImageView
+                        style="@style/spinner_btn"
+                        android:layout_alignBottom="@+id/sp_mng_building"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="24dp" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_alignBottom="@+id/sp_address_building"
+                        android:background="@drawable/sp_line"></View>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:text="请输入您的宿舍号："
+                    android:textColor="@color/text_clo" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <EditText
+                        android:id="@+id/et_address_room"
+                        style="@style/spinner_bar"
+                        android:background="@color/transparent"
+                        android:hint="如：118"
+                        android:inputType="number"
+                        android:paddingLeft="7sp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_clo" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="5sp"
+                        android:layout_alignBottom="@id/et_address_room"
+                        android:background="@drawable/sp_line"></View>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_atyDetails_pickPattern_self"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="9sp"
+                android:paddingTop="10sp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10sp">
+                    <CheckBox
+                        android:id="@+id/cb_address_agree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tv_address_iagree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我同意"
+                        android:layout_toRightOf="@id/cb_address_agree"
+                        android:layout_alignBaseline="@id/cb_address_agree"
+                        />
+                    <TextView
+                        android:id="@+id/tv_address_agreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/i_agree"
+                        android:layout_toRightOf="@id/tv_address_iagree"
+                        android:layout_alignBaseline="@id/cb_address_agree"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_address_submit"
+                style="@style/default_text"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/item_btn"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:src="@drawable/item_mng_bg"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

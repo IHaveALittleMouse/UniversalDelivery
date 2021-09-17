@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.charlesgloria.ud">
+
+    <!-- 环信云通信需要的权限 -->
+    <application
+        android:name=".application.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo_bo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 百度地图API_KEY和service -->
+
+        <activity
+            android:name=".atys.AtyLogin"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".atys.AtyAddress"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity android:name=".atys.AtyMainFrame" />
+        <activity android:name=".atys.AtyTest" />
+
+        <activity android:name=".atys.AtyLaunch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".atys.AtyFetch"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".atys.AtyMail" />
+        <activity
+            android:name=".atys.AtyAddressMng"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".atys.AtyAgreement" />
+        <activity android:name=".atys.AtyUnlog" />
+        <activity android:name=".atys.AtyGenCode" />
+        <activity android:name=".atys.AtyTrustOrders" />
+        <activity android:name=".atys.AtyUpdateOrder" />
+        <activity android:name=".atys.AtyAboutUD" />
+        <activity android:name=".atys.AtyDetails" />
+        <activity android:name=".atys.AtyLocation" />
+        <activity android:name=".atys.AtySearchPosition" />
+        <activity android:name=".atys.AtyGetPosision" />
+        <activity
+            android:name=".atys.AtyChat"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hyphenate.easeui.ui.AtyAddfriend"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".atys.AtyStaffOnly" />
+
+
+        <!-- 阿里云推送接收服务 -->
+        <activity android:name=".atys.AtyJoinUs" />
+
+        <!-- 阿里云推送 -->
+        <!-- 消息接收监听器 （用户可自主扩展） -->
+        <activity android:name=".atys.AtyFeedBack" />
+
+        <!-- 环信云通信 -->
+        <!-- 设置环信应用的AppKey -->
+        <activity android:name=".atys.AtyHelp" />
+        <!-- 声明SDK所需的service SDK核心功能 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Sa37lCe87cVZhqYyv5XIGQbWtY5GFmZc" />
+        <meta-data
+            android:name="com.alibaba.app.appkey"
+            android:value="24779890" />
+        <!-- 声明SDK所需的receiver -->
+        <meta-data
+            android:name="com.alibaba.app.appsecret"
+            android:value="a1cd71f9bb0232b709d171e509e48866" />
+
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1175180207115190#udchina" />
+        <receiver
+            android:name=".alipush.MyMessageReceiver"
+            android:exported="false"> <!-- 为保证receiver安全，建议设置不可导出，如需对其他应用开放可通过android：permission进行限制 -->
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <service
+            android:name=".alipush.MyMessageIntentService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 调用相机的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 阿里移动推送相关权限 -->
+    <!-- 进行网络访问和网络状态监控相关的权限声明 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许对sd卡进行读写操作 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 网络库使用，当网络操作时需要确保事务完成不被杀掉 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 用于读取手机硬件信息等，用于机型过滤 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 选举使用，当应用有删除或者更新时需要重新选举，复用推送通道 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+    <!-- 补偿通道小米PUSH使用，不用可去除 -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <!-- 补偿通道GCM使用，不使用可去除 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 允许监听启动完成事件 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 允许访问震动器 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 允许task重排序 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+
+    <!-- android:icon="@mipmap/ic_launcher" -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+</manifest>

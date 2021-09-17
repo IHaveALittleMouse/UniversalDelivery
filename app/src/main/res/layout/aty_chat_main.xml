@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/TopStatus"
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:id="@+id/btn_container_conversation"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_weight="1"
+                android:paddingTop="11sp">
+
+                <Button
+                    android:id="@+id/btn_conversation"
+                    style="@style/title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:onClick="onTabClicked"
+                    android:scaleType="matrix"
+                    android:text="消息"
+                    android:textColor="@color/em_main_botton_text_color" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_container_address_list"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_weight="1"
+                android:paddingTop="11sp">
+
+                <Button
+                    android:id="@+id/btn_address_list"
+                    style="@style/title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:onClick="onTabClicked"
+                    android:scaleType="matrix"
+                    android:text="联系人"
+                    android:textColor="@color/em_main_botton_text_color" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_line_height"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_marginBottom="1sp"
+            android:background="@color/transparent"
+            >
+
+            <ImageView
+                android:id="@+id/cursor"
+                android:layout_width="@dimen/main_matrix_width"
+                android:layout_height="@dimen/main_line_height"
+                android:scaleType="matrix"
+                android:src="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_bottom" />
+
+</RelativeLayout>
